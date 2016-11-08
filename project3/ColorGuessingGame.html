@@ -7,56 +7,37 @@
 <body>
 
 <script>
-    //black, blue, gold, orange, purple, red, silver, white, yellow
-    var color = ["blue", "red", "black", "purple", "gold", "silver", "white", "orange", "yellow"];
-    var color1 = "blue";
-    var color2 = "red";
-    var color3 = "black";
-    var color4 = "purple";
-    var color5 = "gold";
-    var color6 = "silver";
-    var color7 = "white";
-    var color8 = "orange";
-    var color9 = "yellow";
+    //black", "blue", "gold", "orange", "purple", "red", "silver", "white", "yellow
+    var color = ["black", "blue", "gold", "orange", "purple", "red", "silver", "white", "yellow"];
+    var target_index = 4;  //Later, generate this 4 randomly
+    var comp_choice = color[target_index];
+    var guess = 1;
+    var guess_input; //user input
 
-    color = prompt("Within my mind, I've chosen one of this colors:");
+    i = Math.floor(Math.random(guess) * 9);
 
-    if (color3 < color1)
-        alert("color3 is alphabetically higher");
-    else
-        if (color3 > color1)
-            alert("color3 is alphabetically lower");
+do {
+    guess_input = prompt("Within my mind, I've chosen one of this colors: " +
+            "\nblue, red, black, purple, gold, silver, white, orange, yellow\n" +
+            "what color am I thinking of?");
 
-    if (color1 < color5)
-        alert("color1 is alphabetically higher");
-    else
-        if (color1 > color5)
-            alert("color1 is alphabetically lower");
+    if (color.indexOf(guess_input) > -1) {
+        if (comp_choice == guess_input)
+            alert("Congrats! You guessed right!");
 
-    if (color5 < color8)
-        alert("color5 is alphabetically higher");
-    else
-        if (color5 > color8)
-            alert("color5 is alphabetically lower");
+        else if (comp_choice < guess_input)
+            alert("Wrong guess. Try again.\n Hint: My color's alphabetically higher\n");
 
-    if (color8 < color4)
-        alert("color8 is alphabetically higher");
-    else
-        if (color8 > color4)
-            alert("color8 is alphabetically lower");
+        else if (comp_choice > guess_input)
+            alert("Wrong guess. Try again.\n Hint: My color's alphabetically lower\n");
+    }
+    else {
+        if (comp_choice !== guess_input)
+            alert("Invalid guess! Try again!");
+    }
 
-    if (color4 < color2)
-        alert("color4 is alphabetically higher");
-    else
-        if (color4 > color2)
-            alert("color4 is alphabetically lower");
-
-    if (color2 < color6)
-        alert("color2 is alphabetically higher");
-    else
-        if (color2 < color6)
-            alert("color2 is alphabetically lower");
-
+    } while (comp_choice > guess_input || (comp_choice < guess_input));
+    //I'm unsure what I'm doing up to this point
 
 </script>
 
