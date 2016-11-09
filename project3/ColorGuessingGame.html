@@ -9,35 +9,41 @@
 <script>
     //black", "blue", "gold", "orange", "purple", "red", "silver", "white", "yellow
     var color = ["black", "blue", "gold", "orange", "purple", "red", "silver", "white", "yellow"];
-    var target_index = 4;  //Later, generate this 4 randomly
+    var target_index = Math.floor(Math.random() * 9);  //Later, generate this 4 randomly
     var comp_choice = color[target_index];
     var guess = 1;
     var guess_input; //user input
-
-    i = Math.floor(Math.random(guess) * 9);
-
+    
 do {
-    guess_input = prompt("Within my mind, I've chosen one of this colors: " +
-            "\nblue, red, black, purple, gold, silver, white, orange, yellow\n" +
-            "what color am I thinking of?");
+    try {
+        guess_input = prompt("Within my mind, I've chosen one of this colors: " +
+                "\nblue, red, black, purple, gold, silver, white, orange, yellow\n" +
+                "what color am I thinking of?");
 
-    if (color.indexOf(guess_input) > -1) {
-        if (comp_choice == guess_input)
-            alert("Congrats! You guessed right!");
+        if (color.indexOf(guess_input) > -1) {
+            if (comp_choice == guess_input) {
+                var myBody = document.getElementsByTagName("body")[0];
+                myBody.style.background = comp_choice;
+                alert("Congrats! You guessed right!");
+            }
+            else if (comp_choice < guess_input)
+                alert("Wrong guess! Try again!\n Hint: My color's alphabetically higher\n");
 
-        else if (comp_choice < guess_input)
-            alert("Wrong guess. Try again.\n Hint: My color's alphabetically higher\n");
-
-        else if (comp_choice > guess_input)
-            alert("Wrong guess. Try again.\n Hint: My color's alphabetically lower\n");
+            else if (comp_choice > guess_input)
+                alert("Wrong guess! Try again!\n Hint: My color's alphabetically lower\n");
+        }
+        else {
+            if (comp_choice !== guess_input)
+                alert("Invalid guess! Try again!");
+        }
     }
-    else {
-        if (comp_choice !== guess_input)
-            alert("Invalid guess! Try again!");
+
+    catch (err) {
+        console.log(err);
     }
 
     } while (comp_choice > guess_input || (comp_choice < guess_input));
-    //I'm unsure what I'm doing up to this point
+
 
 </script>
 
