@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b68ff68-36ed-4353-9f62-a8e080ad1332" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project3/ColorGuessingGame.html" afterPath="$PROJECT_DIR$/project3/ColorGuessingGame.html" />
-    </list>
+    <list default="true" id="6b68ff68-36ed-4353-9f62-a8e080ad1332" name="Default" comment="" />
     <ignored path="ColorGuessingGame.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -107,12 +104,12 @@
       <workItem from="1478563319922" duration="1168000" />
       <workItem from="1478565131754" duration="67000" />
       <workItem from="1478565230701" duration="1304000" />
-      <workItem from="1478649543119" duration="705000" />
+      <workItem from="1478649543119" duration="740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3244000" />
+    <option name="totallyTimeSpent" value="3279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
