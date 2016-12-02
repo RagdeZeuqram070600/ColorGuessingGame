@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b68ff68-36ed-4353-9f62-a8e080ad1332" name="Default" comment="" />
+    <list default="true" id="6b68ff68-36ed-4353-9f62-a8e080ad1332" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project3/ColorGuessingGame.html" afterPath="$PROJECT_DIR$/project3/ColorGuessingGame.html" />
+    </list>
     <ignored path="ColorGuessingGame.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,8 +26,8 @@
       <file leaf-file-name="ColorGuessingGame.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project3/ColorGuessingGame.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="428">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -104,12 +106,12 @@
       <workItem from="1478563319922" duration="1168000" />
       <workItem from="1478565131754" duration="67000" />
       <workItem from="1478565230701" duration="1304000" />
-      <workItem from="1478649543119" duration="764000" />
+      <workItem from="1478649543119" duration="1085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3303000" />
+    <option name="totallyTimeSpent" value="3624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -176,8 +178,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project3/ColorGuessingGame.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="428">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
           <folding />
         </state>
       </provider>
